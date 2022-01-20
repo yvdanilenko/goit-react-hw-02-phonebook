@@ -37,7 +37,7 @@ class App extends Component {
     const inputId = nanoid();
 
     if (this.state.contacts.some((el) => el.name === contact.name)) {
-      alert(this.state.name + "already in contacts");
+      alert(`${contact.name} already in contacts`);
       return;
     }
 
